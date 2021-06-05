@@ -48,6 +48,13 @@ h2 {
 }
 
 h3 {
+	font-family: 'bitter italic', 'Lucida Sans', 'Lucida Sans Regular',
+		'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #ffa9c6;
+	font-size: 1.5rem;
+}
+
+h4 {
 	font-family: 'graphik bold', Arial, Helvetica, sans-serif;
 	color: #ffa9c6;
 	font-size: 1.5rem;
@@ -149,27 +156,31 @@ a:hover {
 	margin: 3rem 2rem 10rem 2rem;
 }
 
-.projects h3:last-of-type {
+.projects h3 {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.projects h4:last-of-type {
 	margin-bottom: 2rem;
 }
 
 .project__img {
 	position: relative;
-	height: 300px;
+	height: 180px;
 	overflow: hidden;
 	width: 100%;
 	margin-bottom: 0.5rem;
 }
 
 .project__wrapper {
-	max-width: 600px;
+	max-width: 100%;
 	margin: auto;
 }
 
 .project__img img {
 	position: absolute;
-	left: -5rem;
-	width: 150%;
+	width: 110%;
 }
 
 .project__img img:hover {
