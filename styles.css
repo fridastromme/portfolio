@@ -97,10 +97,6 @@ a {
 	color: #0b2e99;
 }
 
-a:hover {
-	font-family: 'graphik bold', Arial, Helvetica, sans-serif;
-}
-
 .active {
 	color: #0b2e99;
 	background-color: #ffa9c6;
@@ -200,6 +196,7 @@ a:hover {
 }
 
 /* Project pages */
+
 .project__section {
 	margin: 8rem 2rem 2rem 2rem;
 }
@@ -208,4 +205,68 @@ a:hover {
 	color: #0b2e99 !important;
 	font-family: 'graphik medium', Arial, Helvetica, sans-serif;
 	color: #ffc2d6;
+	margin-top: 1.5rem;
+}
+
+.project__section h2,
+.project__section h3,
+.project__section p {
+	color: #0b2e99 !important;
+	margin-top: 1rem;
+}
+
+.byway__img {
+	width: 100%;
+	margin-top: 1rem;
+	max-width: 1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0.5rem;
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	margin-bottom: 10rem;
+}
+
+.website-button,
+.report-button {
+	font-size: 1.3rem;
+	border: solid 5px #0b2e99;
+	color: #0b2e99;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	text-align: center;
+}
+
+.website-button:hover,
+.report-button:hover {
+	border: solid 5px #ffa9c6;
+	background-color: transparent;
+	color: #0b2e99;
+}
+
+.go-back {
+	border-bottom: 2px solid #0b2e99 !important;
+}
+
+.go-back:hover {
+	animation: border-animation 1s ease;
+}
+
+@keyframes border-animation {
+	0% {
+		padding-left: 0rem;
+	}
+	50% {
+		padding-left: 1rem;
+	}
+	100% {
+		padding-left: 0rem;
+	}
 }
