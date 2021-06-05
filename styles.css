@@ -1,0 +1,200 @@
+@font-face {
+	font-family: 'graphik bold';
+	src: url('/fonts/Graphik-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'graphik medium';
+	src: url('/fonts/Graphik-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'graphik regular';
+	src: url('/fonts/Graphik-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'bitter italic';
+	src: url('/fonts/Bitter-ThinItalic.woff') format('woff');
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #0b2e99;
+}
+
+/* Light body */
+
+.light {
+	background-color: white;
+}
+
+h1 {
+	font-family: 'graphik bold', Arial, Helvetica, sans-serif;
+	color: #ffa9c6;
+	font-size: 2.8rem;
+}
+
+h2 {
+	font-family: 'bitter italic', 'Lucida Sans', 'Lucida Sans Regular',
+		'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #ffa9c6;
+	font-size: 2rem;
+}
+
+h3 {
+	font-family: 'graphik bold', Arial, Helvetica, sans-serif;
+	color: #ffa9c6;
+	font-size: 1.5rem;
+}
+
+p {
+	font-family: 'graphik regular', Arial, Helvetica, sans-serif;
+	color: #ffc2d6;
+}
+
+.header__nav {
+	padding: 2.5rem;
+	background-color: #0b2e99;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+/* Light header and bottom section */
+
+#light {
+	background-color: white;
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+li a {
+	color: #ffa9c6;
+	font-family: 'graphik medium', Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a {
+	font-family: 'graphik medium', Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #0b2e99;
+}
+
+a:hover {
+	font-family: 'graphik bold', Arial, Helvetica, sans-serif;
+}
+
+.active {
+	color: #0b2e99;
+	background-color: #ffa9c6;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	margin-right: 2rem;
+}
+
+.active:hover {
+	border: solid 3px #ffa9c6;
+	background-color: transparent;
+	color: #ffa9c6;
+}
+
+#light p,
+#light a {
+	color: #0b2e99;
+}
+
+.presentation {
+	margin: 8rem 2rem 2rem 2rem;
+	max-width: 400px;
+}
+
+.presentation h1:last-of-type {
+	margin-bottom: 1rem;
+}
+
+.fixed {
+	position: fixed;
+	bottom: 0;
+	background-color: #0b2e99;
+	padding: 2rem;
+	width: 100%;
+}
+
+.fixed p {
+	text-align: right;
+	margin: 0px;
+	margin-bottom: 0.2rem;
+}
+
+.vertical {
+	margin-top: 3rem;
+}
+
+.line {
+	border-right: 3px solid #ffa9c6;
+	height: 25rem;
+	width: 50%;
+}
+
+.projects {
+	margin: 3rem 2rem 10rem 2rem;
+}
+
+.projects h3:last-of-type {
+	margin-bottom: 2rem;
+}
+
+.project__img {
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+.project__wrapper {
+	max-width: 600px;
+	margin: auto;
+}
+
+.project__img img {
+	position: absolute;
+	left: -5rem;
+	width: 150%;
+}
+
+.project__img img:hover {
+	animation: zoom-img ease 2s;
+}
+
+@keyframes zoom-img {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Project pages */
+.project__section {
+	margin: 8rem 2rem 2rem 2rem;
+}
+
+.project__section h1 {
+	color: #0b2e99 !important;
+	font-family: 'graphik medium', Arial, Helvetica, sans-serif;
+	color: #ffc2d6;
+}
