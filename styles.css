@@ -41,6 +41,7 @@ main {
 
 h1 {
 	font-family: 'graphik bold', Arial, Helvetica, sans-serif;
+	font-weight: bold;
 	color: #ffa9c6;
 	font-size: 2.8rem;
 }
@@ -48,6 +49,8 @@ h1 {
 h2 {
 	font-family: 'bitter italic', 'Lucida Sans', 'Lucida Sans Regular',
 		'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: 200;
+	font-style: italic;
 	color: #ffa9c6;
 	font-size: 2rem;
 }
@@ -55,12 +58,15 @@ h2 {
 h3 {
 	font-family: 'bitter italic', 'Lucida Sans', 'Lucida Sans Regular',
 		'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: 200;
+	font-style: italic;
 	color: #ffa9c6;
 	font-size: 1.5rem;
 }
 
 h4 {
 	font-family: 'graphik bold', Arial, Helvetica, sans-serif;
+	font-weight: bold;
 	color: #ffa9c6;
 	font-size: 1.5rem;
 }
@@ -106,17 +112,16 @@ a {
 	color: #0b2e99;
 }
 
+a:hover {
+	font-family: 'graphik bold', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
 .active {
 	color: #0b2e99;
 	background-color: #ffa9c6;
 	padding: 0.5rem 1rem 0.5rem 1rem;
 	margin-right: 2rem;
-}
-
-.active:hover {
-	border: solid 3px #ffa9c6;
-	background-color: transparent;
-	color: #ffa9c6;
 }
 
 #light p,
@@ -267,6 +272,7 @@ a {
 }
 
 .go-back:hover {
+	font-family: 'graphik medium', Arial, Helvetica, sans-serif;
 	animation: border-animation 1s ease;
 }
 
