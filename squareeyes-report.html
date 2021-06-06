@@ -25,43 +25,93 @@
 				<a href="javascript:history.back()" class="go-back">Go back</a>
 				<h1>Report: Square Eyes</h1>
 				<h2>
-					After assessing my work through writing the report for Exam 1 and
-					recieving feedback on the delivery, I've made som changes on the site.
+					When I started developing Square Eyes almost a year ago, I had no
+					frontend experience. Since then, the site has been through several
+					rounds of improvements.
 				</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
-					nisi auctor, pretium tortor sed, laoreet quam. Cras ac arcu justo.
-					Curabitur dignissim sem non est aliquam, ac consequat leo ornare.
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-					per inceptos himenaeos. Praesent ipsum risus, ultrices euismod lacus
-					vitae, hendrerit auctor dolor. Etiam elementum pellentesque sem, eu
-					ornare lacus. Phasellus sed leo mauris.
+					I had a lot of fun designing Square Eyes in the design course at the
+					beginning of the year. I didn't know the limitations at the time, or
+					where I would meet challenges when developing the site. I a sense,
+					this was a good thing, because it forced me to go into a steep
+					learning curve, and I developed my skills quickly during the initial
+					process of creating the site with HTML and CSS.
 				</p>
 				<h3>Improvements</h3>
 				<p>
-					Curabitur posuere mauris at ipsum cursus, vel fermentum erat sagittis.
-					Sed aliquet lorem et malesuada tempor. Nunc tempor, libero a
-					vestibulum semper, lacus lorem fringilla sem, quis sollicitudin diam
-					lacus at mi. Nam accumsan laoreet feugiat. Donec nec orci nisl. Sed
-					purus risus, hendrerit nec lorem sed, blandit faucibus leo. Donec
-					consectetur nisl at urna tincidunt posuere. Cras feugiat dolor rutrum
-					tempor pellentesque. In leo eros, varius a magna quis, pulvinar
-					bibendum mi.
+					I went back to the last submission of the site and looked at the
+					feedback I got on the assignment. From there I used what I learned
+					during the Exam 1 period, and created a modal for the infobox that
+					pops up when you click the featured movie. The information here is
+					also dynamically created through Wordpress REST API. This means that
+					when updating the featured movie in Wordpress, the information modal
+					will also be automatically updated, which is practical. The rest of
+					the movies are also dynamically fetched from Wordpress' Woocommerce.
 				</p>
-				<h3>Challenges</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
-					nisi auctor, pretium tortor sed, laoreet quam. Cras ac arcu justo.
-					Curabitur dignissim sem non est aliquam, ac consequat leo ornare.
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-					per inceptos himenaeos. Praesent ipsum risus, ultrices euismod lacus
-					vitae, hendrerit auctor dolor. Etiam elementum pellentesque sem, eu
-					ornare lacus. Phasellus sed leo mauris. Ut a odio mattis felis
-					pharetra ornare nec non ligula. Quisque tellus lectus, pretium vel
-					imperdiet auctor, congue id mauris. Sed varius turpis non mauris
-					fermentum porta. Curabitur ornare sem lacus, eget aliquam nisl
-					faucibus vitae. Cras commodo massa at elit lobortis, a cursus nibh
-					vehicula.
+					Meta titles and meta descriptions are also dynamically updated through
+					the API depending on which movie you click on. This way, you don't
+					need to hard code each of these every time you make a change in the
+					lists of movies.
+				</p>
+				<p>
+					I used JavaScript to change the styling of the hover states when
+					hovering over the movie image. Earlier, the styling of the movie
+					titles would only change when hovering over the title itself. This is
+					more pleasing and less confusing for the user.
+				</p>
+				<p>
+					On the purchase movie page, I added a shadow to the purchase
+					information section in order to highlight this more. I also adapted
+					the page better to smaller screens, and the layout changes from a two
+					column grid to a one column grid depending on the screen width.
+				</p>
+				<p>
+					The user profile pages had a lot of static pixel widts defined on the
+					different sections, which made these pages adapt poorly to different
+					screen widths. I changed the widts to percentages and max-widths
+					instead. This really improved how the different sections adapted to
+					different screen sizes.
+				</p>
+				<p>
+					I also added some subtle animations to some of the elements on the
+					site. Like a zoom effect when hovering over the different movie images
+					to further indicate that these are clickable. These small movements
+					are also meant to be more pleasing for the user, and are intended to
+					make it more interesting to click these elements.
+				</p>
+				<p>
+					I tidied up the header and footer navigations by aligning the elements
+					better. I also improved the alignment on some of the call to action
+					buttons, both on the front page and on the user profiles. These also
+					have an improved color contrast. The navigation on the sign up and
+					sign in pages are also improved for assistive technology by adding
+					aria-labels for easier navigation between the different sections.
+				</p>
+				<p>
+					The forms should also now be labeled correctly, with a for attribute
+					pointing to the id of the input. This way, the user knows which input
+					the label refers to.
+				</p>
+				<p>
+					During the different rounds of improving the Square Eyes site, I've
+					both been adding and removing classes and ids. I took some time to
+					clean up and remove the ones who weren't used anymore. The code is now
+					simplified compared to earlier versions, which makes it easier to
+					develop further and gives me a better overview.
+				</p>
+				<h3>Conclusion</h3>
+				<p>
+					This project is especially characterized by the fact that I learned
+					the very basics of frontend development while creating the site from
+					scratch. This means that several places I needed to spend some time
+					understanding what I intented to do at the time. A portion of the
+					improvements consisted of cleaning up the classes and simplifying the
+					elements. I still think that further improvements could be made in
+					this area. There might also be some places where small adjustments to
+					margins and paddings would improve the design even further. At this
+					point in time, I think Square Eyes has improved significantly and it
+					is a testament to how much I've learned during one year.
 				</p>
 			</section>
 		</main>

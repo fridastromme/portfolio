@@ -25,43 +25,86 @@
 				<a href="javascript:history.back()" class="go-back">Go back</a>
 				<h1>Report: Community Science Museum</h1>
 				<h2>
-					After assessing my work through writing the report for Exam 1 and
-					recieving feedback on the delivery, I've made som changes on the site.
+					I didn't have any experience working with JavaScript when first
+					developing my semester project. A large part of the improvements done
+					on this site consisted of implementing Wordpress REST API.
 				</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
-					nisi auctor, pretium tortor sed, laoreet quam. Cras ac arcu justo.
-					Curabitur dignissim sem non est aliquam, ac consequat leo ornare.
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-					per inceptos himenaeos. Praesent ipsum risus, ultrices euismod lacus
-					vitae, hendrerit auctor dolor. Etiam elementum pellentesque sem, eu
-					ornare lacus. Phasellus sed leo mauris.
+					After delivering this project, I got some very helpful and detailed
+					feedback. The first thing I did when revisiting this project, was to
+					go improve these areas. I then went on to implement JavaScript for
+					REST API and form validation.
 				</p>
 				<h3>Improvements</h3>
 				<p>
-					Curabitur posuere mauris at ipsum cursus, vel fermentum erat sagittis.
-					Sed aliquet lorem et malesuada tempor. Nunc tempor, libero a
-					vestibulum semper, lacus lorem fringilla sem, quis sollicitudin diam
-					lacus at mi. Nam accumsan laoreet feugiat. Donec nec orci nisl. Sed
-					purus risus, hendrerit nec lorem sed, blandit faucibus leo. Donec
-					consectetur nisl at urna tincidunt posuere. Cras feugiat dolor rutrum
-					tempor pellentesque. In leo eros, varius a magna quis, pulvinar
-					bibendum mi.
+					Earlier, all the images and text on the news and exhibition sections
+					was hard coded onto the site. I used what I learned during the
+					JavaScript and CRM courses to fetch images and text from Wordpress
+					while also automatically updating meta titles and meta descriptions.
+					Now, all the exhibition categories are dynamically created and can
+					easily be updated through Wordpress. They also have their own
+					dynamically created page. I also added new images to each page
+					(soruces below). I removed arrows and instead added a hover animation
+					to indicate that the user can click to view more. I think it looks
+					tidier and the movement is more pleasing. The color palette is also
+					made less childlike by only having one color on the category divs. I
+					figured the circles were playful enough by themselves.
 				</p>
-				<h3>Challenges</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
-					nisi auctor, pretium tortor sed, laoreet quam. Cras ac arcu justo.
-					Curabitur dignissim sem non est aliquam, ac consequat leo ornare.
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-					per inceptos himenaeos. Praesent ipsum risus, ultrices euismod lacus
-					vitae, hendrerit auctor dolor. Etiam elementum pellentesque sem, eu
-					ornare lacus. Phasellus sed leo mauris. Ut a odio mattis felis
-					pharetra ornare nec non ligula. Quisque tellus lectus, pretium vel
-					imperdiet auctor, congue id mauris. Sed varius turpis non mauris
-					fermentum porta. Curabitur ornare sem lacus, eget aliquam nisl
-					faucibus vitae. Cras commodo massa at elit lobortis, a cursus nibh
-					vehicula.
+					I added form validation on the contact form as well, with error
+					messages showing if the user type in an invalid input. When the user
+					has typed in all the required inputs and clicket "submit", a feedback
+					message will appear, telling the user that the message was
+					successfully sent. Unlike before, the user now recieves expected
+					validation when interacting with the form, which is important for user
+					experience.
+				</p>
+				<p>
+					The logo now includes a logotype as well, to make it clearer for the
+					user which website they are on. "Community Science Museum" is a long
+					name, so I decided to only include the initials and expect this to be
+					sufficient and a reasonable compromise between providing information
+					while still maintaining a clean design.
+				</p>
+				<p>
+					The arrows on some of the links are essentially images, so I added
+					aria-labels as suggested in the feedback. This way, users with
+					assistive technology can navigate better.
+				</p>
+				<p>
+					The links and buttons have now changed color to improve contrast. The
+					call to action button in the header is wrapped inside a li element,
+					and should now be semantically correct. The read more-links are now
+					easier to spot by including a border on the bottom. All the pages now
+					also includes a skip to main content link, so that people using
+					assistive technology can skip repeating content.
+				</p>
+				<p>
+					A smaller but still significant change was fixing the font paths and
+					also adding alternative fonts. The fonts weren't loading properly onto
+					the page before, but this should now work as inteded.
+				</p>
+				<h3>Conclusion</h3>
+				<p>
+					When developing this project the first time, I had a better
+					understanding of the limitations of HTML and CSS. This made the
+					process more structural and less complicated than the cross course
+					project from earier. I was initially quite happy with the result, but
+					through self assessment and feedback I saw where I could make changes
+					both in the design and in the code. Now that I have some grasp on
+					JavaScript and Wordpress REST API, I could make some significant and
+					practical changes to the site. Being able to update the exhibition and
+					news-sites through a CRM makes it easier to work with for both the
+					developer and other stakeholders.
+				</p>
+				<h3>Image soruces</h3>
+				<p>
+					The new images added onto the site are all downloaded from Unsplash.
+				</p>
+				<p>
+					Credits: Sharon McCutcheon, David Matos, Adrian Lange,
+					ThisisEngineering, Possessed Photography, Giu Vicente, Moralis Tsai,
+					ASIA CULTURECENTER, USGS, and Sigmund Jerry Wang.
 				</p>
 			</section>
 		</main>

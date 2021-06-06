@@ -26,42 +26,64 @@
 				<h1>Report: ByWay</h1>
 				<h2>
 					After assessing my work through writing the report for Exam 1 and
-					recieving feedback on the delivery, I've made som changes on the site.
+					recieving feedback on the delivery, I've made some improvements on the
+					site.
 				</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
-					nisi auctor, pretium tortor sed, laoreet quam. Cras ac arcu justo.
-					Curabitur dignissim sem non est aliquam, ac consequat leo ornare.
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-					per inceptos himenaeos. Praesent ipsum risus, ultrices euismod lacus
-					vitae, hendrerit auctor dolor. Etiam elementum pellentesque sem, eu
-					ornare lacus. Phasellus sed leo mauris.
+					Developing ByWay consisted for a lot of trial and error on several
+					areas. I had to find solutions for challenges such as creating a
+					carousel and an image modal. This had me trying out different
+					solutions until it worked as intended. As I also mentioned in the exam
+					report, some of these solutions could still use some small
+					improvements in order to work better. I also wanted to make the
+					website slightly more interesting by introducing a small design change
+					that would still have some significance on the overall look of the
+					site.
 				</p>
 				<h3>Improvements</h3>
 				<p>
-					Curabitur posuere mauris at ipsum cursus, vel fermentum erat sagittis.
-					Sed aliquet lorem et malesuada tempor. Nunc tempor, libero a
-					vestibulum semper, lacus lorem fringilla sem, quis sollicitudin diam
-					lacus at mi. Nam accumsan laoreet feugiat. Donec nec orci nisl. Sed
-					purus risus, hendrerit nec lorem sed, blandit faucibus leo. Donec
-					consectetur nisl at urna tincidunt posuere. Cras feugiat dolor rutrum
-					tempor pellentesque. In leo eros, varius a magna quis, pulvinar
-					bibendum mi.
+					By adjusting the background-color to a brighter tone, I intended to
+					make the website more visually appealing. I also added a simple svg
+					graphic in the background on the front page in order to make the
+					design more interesting and inspiring. This is supposed to point to
+					the theme of travelling and landscapes by imitating lines on a map or
+					cracks on the side of a mountain. The svg also has a subtle movement.
+					Many users will probably not spot the animation, but I think this
+					works as an interesting addition.
 				</p>
-				<h3>Challenges</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
-					nisi auctor, pretium tortor sed, laoreet quam. Cras ac arcu justo.
-					Curabitur dignissim sem non est aliquam, ac consequat leo ornare.
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-					per inceptos himenaeos. Praesent ipsum risus, ultrices euismod lacus
-					vitae, hendrerit auctor dolor. Etiam elementum pellentesque sem, eu
-					ornare lacus. Phasellus sed leo mauris. Ut a odio mattis felis
-					pharetra ornare nec non ligula. Quisque tellus lectus, pretium vel
-					imperdiet auctor, congue id mauris. Sed varius turpis non mauris
-					fermentum porta. Curabitur ornare sem lacus, eget aliquam nisl
-					faucibus vitae. Cras commodo massa at elit lobortis, a cursus nibh
-					vehicula.
+					The HTML had some unclosed tags, which I improved. The skip to main
+					content-link didn't work because it was linking to a class. Now it
+					links to an id and should work as intended. Some of the headings
+					wasn't in correct order, and this is now fixed. The website are now
+					improved in regards to WCAG guidelines.
+				</p>
+				<p>
+					Some of the elements on the site was a little too snug on different
+					screen sizes. For example, the carousel got quite narrow before the
+					media quiery that changed the grid columns cicked in. The stories page
+					also created a horizontal scrollbar on a narrower width. I improved
+					these areas by including them in an earlier media quiery.
+				</p>
+				<p>
+					This time around I was able to fix the load more-link after loading
+					all the posts in the stories page. Earlier, the link would still be
+					visible even though all the posts were loaded onto the page. I worked
+					around this by creating an if statement that removed the link if the
+					number of posts were 18. This means that when adding more posts, the
+					load more-link will still be removed after 18 posts, which I realise
+					isn't ideal.
+				</p>
+				<h3>Modal</h3>
+				<p>
+					I spent most of my time during these two weeks improving Square Eyes
+					and Community Science Museum, and needed to realise some of my
+					limitations while working on ByWay. Ideally, I would like to write a
+					code to check the length of the posts array, and removing the
+					load-more button dynamically. And I would like to attempt level 2. I'm
+					still content with the result, and I'm happy with the improvements I
+					made so far. The exam was challenging and developing this project
+					helped me practice my skills in JavaScript and Wordpress REST API.
 				</p>
 			</section>
 		</main>
