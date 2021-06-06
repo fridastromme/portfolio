@@ -28,6 +28,11 @@ body {
 	background-color: #0b2e99;
 }
 
+main {
+	max-width: 700px;
+	margin: auto;
+}
+
 /* Light body */
 
 .light {
@@ -80,6 +85,10 @@ p {
 	background-color: white;
 }
 
+#light a {
+	margin-right: 2rem;
+}
+
 li {
 	list-style-type: none;
 	display: inline-block;
@@ -116,7 +125,9 @@ a {
 }
 
 .presentation {
-	margin: 8rem 2rem 2rem 2rem;
+	margin-top: 8rem;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 400px;
 }
 
@@ -163,7 +174,7 @@ a {
 
 .project__img {
 	position: relative;
-	height: 180px;
+	height: 175px;
 	overflow: hidden;
 	width: 100%;
 	margin-bottom: 0.5rem;
@@ -215,7 +226,7 @@ a {
 	margin-top: 1rem;
 }
 
-.byway__img {
+.site__img {
 	width: 100%;
 	margin-top: 1rem;
 	max-width: 1000px;
@@ -252,7 +263,7 @@ a {
 }
 
 .go-back {
-	border-bottom: 2px solid #0b2e99 !important;
+	border-bottom: 2px solid #ffa9c6 !important;
 }
 
 .go-back:hover {
@@ -268,5 +279,43 @@ a {
 	}
 	100% {
 		padding-left: 0rem;
+	}
+}
+
+/* Media queries */
+
+@media screen and (min-width: 450px) {
+	.project__img {
+		height: 220px;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.project__img {
+		height: 250px;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.project__img {
+		height: 300px;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.project__img {
+		height: 330px;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.presentation {
+		max-width: 460px;
+	}
+	.presentation h1 {
+		font-size: 3.5rem;
+	}
+	.presentation h2 {
+		font-size: 2.7rem;
 	}
 }
