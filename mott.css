@@ -1,0 +1,124 @@
+@font-face {
+	font-family: 'mott regular';
+	src: url('/fonts/Mott-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'graphik bold';
+	src: url('/fonts/Graphik-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'graphik medium';
+	src: url('/fonts/Graphik-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'graphik regular';
+	src: url('/fonts/Graphik-Regular.woff') format('woff');
+}
+
+body{
+    background-color: #F9EF96;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-family: 'mott regular';
+    font-size: 20em;
+    letter-spacing: -20px;
+    transform: rotate(-10deg);
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'graphik regular';
+    text-align: center;
+}
+
+p {
+    font-family: 'graphik regular';
+}
+
+
+.knapp:hover{
+    background: #2C3031;
+    color: white;
+    border-color: white;
+}
+
+/* Legg bildet tydelig nederst */
+#mott-barn {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;               /* <-- flytt nederst for sikkerhet */
+  display: block;
+}
+
+#scratchCanvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;                /* over knapp og bilde */
+  width: 100%;
+  height: 100vh;
+  cursor: crosshair;
+  display: block;
+  transition: opacity .3s ease;  /* for pen fade */
+}
+
+/* Når nok er skrapt: skru av hit-testing og fader ut */
+.scratch-container.unlocked #scratchCanvas {
+  pointer-events: none;
+  opacity: 0;
+}
+
+
+.scratch-container {
+  position: relative;
+  width: 100%;   /* juster */
+  height: 100vh;  /* juster */
+  overflow: hidden;
+}
+
+
+.bille-gif {
+  position: absolute;
+  z-index: 3;
+  width: 150px;       /* juster størrelse på billen */
+  height: auto;
+  left: 50%;          /* start midt på X-aksen */
+  bottom: -200px;     /* litt utenfor bunnen */
+  transform: translateX(-50%); /* sentrer nøyaktig */
+  animation: fly-diagonal 32s linear;
+}
+
+/* Diagonal bane oppover mot høyre eller venstre */
+@keyframes fly-diagonal {
+  0% {
+    transform: translateX(-100%) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: translateX(50vw) translateY(-150vh) rotate(80deg);; /* så skrått mot høyre og opp */
+  }
+}
+
+.mottekst1 {
+  position: absolute;
+  display: block;
+  margin: auto;
+  height: 30px !important;
+  width: 250px;
+  inset: 0;
+  z-index: 0;    
+  color: black;
+  font-family: 'graphik regular', sans-serif;
+  font-size: 1em;
+  padding: 0.5em 2em 1.7em 2em;
+  background-color: #F9EF96;
+}

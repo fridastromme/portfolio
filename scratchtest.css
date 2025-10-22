@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'mott regular';
+	src: url('/fonts/Mott-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'graphik bold';
+	src: url('/fonts/Graphik-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'graphik medium';
+	src: url('/fonts/Graphik-Medium.woff') format('woff');
+}
+
+html, body {
+  margin: 0;
+  background:#F9EF96;
+  color:#fff;
+  font-family: system-ui, sans-serif;
+}
+
+.scratch-stack {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+/* Nederst innhold */
+.final-content {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.final-content h1 { 
+    margin: 0 0 .5rem 0; 
+    font-family: 'graphik regular';
+
+}
+
+
+.final-content p  { 
+    font-family: 'graphik regular';
+    background-color: #F9EF96;
+    color: black;
+}
+
+/* Scratch-lag (sist i DOM ligger øverst) */
+.scratch-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%; 
+  height: 100vh;
+  display: block;
+  cursor: crosshair;
+  transition: opacity .3s ease;
+}
+.scratch-layer.unlocked {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bille-gif-1 {
+  position: absolute;
+  z-index: 3;
+  width: 150px;       /* juster størrelse på billen */
+  height: auto;
+  left: 50%;          /* start midt på X-aksen */
+  bottom: -200px;     /* litt utenfor bunnen */
+  transform: translateX(-50%); /* sentrer nøyaktig */
+  animation: fly-diagonal 32s linear;
+}
+
+/* Diagonal bane oppover mot høyre eller venstre */
+@keyframes fly-diagonal {
+  0% {
+    transform: translateX(-100%) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: translateX(50vw) translateY(-150vh) rotate(80deg);; /* så skrått mot høyre og opp */
+  }
+}
