@@ -87,3 +87,85 @@ html, body {
     transform: translateX(50vw) translateY(-150vh) rotate(80deg);; /* så skrått mot høyre og opp */
   }
 }
+
+.bille-gif-2 {
+  position: absolute;
+  z-index: 3;
+  width: 150px;
+  height: auto;
+
+top: 50%;
+  right: -160px;  
+  animation: fly-right-to-left 32s 25s linear;
+}
+
+@keyframes fly-right-to-left {
+  0% {
+
+    transform: translate(0, -50%) rotate(-20deg);
+  }
+  40% {
+    transform: translate(-45vw, -60vh) rotate(-20deg);
+  }
+  70% {
+    transform: translate(-80vw, -85vh) rotate(-8deg);
+  }
+  100% {
+    transform: translate(-110vw, -100vh) rotate(-12deg);
+  }
+}
+
+.bille-gif-3 {
+  position: absolute;
+  z-index: 3;
+  width: 150px;
+  height: auto;
+  left: -120px;    
+  bottom: -100px;      
+  animation: fly-left-to-top 32s 45s linear;
+}
+
+@keyframes fly-left-to-top {
+  0% {
+    transform: translate(0, 0) rotate(80deg);
+  }
+  25% {
+    transform: translate(15vw, -20vh) rotate(80deg);
+  }
+  50% {
+    transform: translate(35vw, -45vh) rotate(80deg);
+  }
+  80% {
+    transform: translate(50vw, -80vh) rotate(80deg);
+  }
+  100% {
+    transform: translate(55vw, -100vh) rotate(80deg);
+  }
+}
+
+.bille-gif-4 {
+  position: absolute;
+  z-index: 3;
+  width: 150px;
+  height: auto;
+
+top: 50%;
+  right: -160px;  
+  animation: fly-right-to-left 32s 65s linear;
+}
+
+@keyframes fly-right-to-left {
+  0% {
+
+    transform: translate(0, -50%) rotate(-20deg);
+  }
+  40% {
+    transform: translate(-45vw, -60vh) rotate(-20deg);
+  }
+  70% {
+    transform: translate(-80vw, -85vh) rotate(-8deg);
+  }
+  100% {
+    transform: translate(-110vw, -100vh) rotate(-12deg);
+  }
+}
