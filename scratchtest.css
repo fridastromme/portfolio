@@ -28,7 +28,6 @@ html, body {
   box-shadow: 0 10px 30px rgba(0,0,0,.35);
 }
 
-/* Nederst innhold */
 .final-content {
   position: absolute;
   inset: 0;
@@ -44,14 +43,12 @@ html, body {
 
 }
 
-
 .final-content p  { 
     font-family: 'graphik regular';
     background-color: #F9EF96;
     color: black;
 }
 
-/* Scratch-lag (sist i DOM ligger øverst) */
 .scratch-layer {
   position: absolute;
   inset: 0;
@@ -67,24 +64,26 @@ html, body {
   pointer-events: none;
 }
 
+
+/** BILLER **/
+
 .bille-gif-1 {
   position: absolute;
   z-index: 3;
-  width: 150px;       /* juster størrelse på billen */
+  width: 150px;       
   height: auto;
-  left: 50%;          /* start midt på X-aksen */
-  bottom: -200px;     /* litt utenfor bunnen */
-  transform: translateX(-50%); /* sentrer nøyaktig */
+  left: 50%;         
+  bottom: -200px;     
+  transform: translateX(-50%); 
   animation: fly-diagonal 32s linear;
 }
 
-/* Diagonal bane oppover mot høyre eller venstre */
 @keyframes fly-diagonal {
   0% {
     transform: translateX(-100%) translateY(0) rotate(70deg);
   }
   100% {
-    transform: translateX(50vw) translateY(-150vh) rotate(80deg);; /* så skrått mot høyre og opp */
+    transform: translateX(50vw) translateY(-150vh) rotate(80deg);
   }
 }
 
@@ -151,7 +150,7 @@ top: 50%;
 
 top: 50%;
   right: -160px;  
-  animation: fly-right-to-left 32s 65s linear;
+  animation: fly-right-to-left 32s 70s linear;
 }
 
 @keyframes fly-right-to-left {
